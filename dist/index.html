@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+  </head>
+  <body>
+    <hr />
+    <form action="/info" method="post">
+      <div>
+        이름:
+        <input type="text" name="testName" id="tId" />
+      </div>
+      <div>
+        나이:
+        <input type="text" name="testAge" id="tAge" />
+      </div>
+      <div>
+        의문사항:
+        <input type="text" name="testQuestions" id="tQuestions" />
+      </div>
+      <input type="submit" value="확인 전송" />
+    </form>
+    <hr />
+    <form action="/up" method="post" enctype="multipart/form-data">
+      <input type="file" name="fileUpload" id="" required />
+      <input type="submit" value="전송" />
+    </form>
+    <hr />
+  </body>
+</html>
